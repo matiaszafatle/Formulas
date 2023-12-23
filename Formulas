@@ -1,0 +1,9 @@
+# Profit Margin
+  
+  SELECT
+    product_name,
+    ROUND((sales_price - purchase_price) * 0.93,2) AS ProfitMargin
+  FROM products
+  ORDER BY 
+    ROUND((sales_price - purchase_price) * 0.93,2) DESC,
+    product_name ASC;
